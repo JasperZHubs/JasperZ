@@ -1,0 +1,30 @@
+local PabloLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/BatuKvi123/PabloLibV3/main/PabloLibV3"))()
+local window = PabloLib:Create(
+"Testing", -- Name here.
+"Enabled", -- If you want draggable set here to "Enabled" if you dont want set to "Disabled".
+"r" -- You can put any keybind here to open close.
+)
+
+---Tabs--
+
+local tab1 = window:CreateTab("JasperZAdmin")
+
+---buttons---
+
+tab1:CreateButton("JasperZAdmin", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+tab1:CreateTextbox("Change your Speed", function(a)
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = a
+print(a)
+end)
+
+tab1:CreateTextbox("Change your JumpPower", function(a)
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = a
+print(a)
+end)
+
+---WARNING---
+
+tab1:CreateWarning("This Scirpt Is Very Dangerous Because The Maker Named Jasper Is Soo Handsome")
